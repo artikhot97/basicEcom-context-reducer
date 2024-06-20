@@ -1,6 +1,7 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
+import { DUMMY_PRODUCTS } from "../dummy-products.js";
 
-const CartContext = createContext({
+export const CartContext = createContext({
   items: [],
   addItemToCart: () => {},
   updateItemQuantity: () => {},
